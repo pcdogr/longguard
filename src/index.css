@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root,
+  html[data-theme='light'] {
+    --bg-canvas: #F7F6F2;
+    --bg-subtle: #EFECE6;
+    --bg-card: #FFFFFF;
+    --bg-elevated: #F5F3EE;
+    --text-primary: #141210;
+    --text-secondary: #3F3A34;
+    --text-muted: #6E675F;
+    --border-subtle: rgba(28, 25, 23, 0.09);
+    --border-strong: rgba(28, 25, 23, 0.16);
+    --accent-amber-text: #B45309;
+    background-color: #F7F6F2;
+    color: #141210;
+  }
+
+  html[data-theme='dark'] {
+    --bg-canvas: #0B0A0A;
+    --bg-subtle: #121110;
+    --bg-card: #181716;
+    --bg-elevated: #1F1D1B;
+    --text-primary: #FFFFFF;
+    --text-secondary: #D6D3D1;
+    --text-muted: #A8A29E;
+    --border-subtle: rgba(255, 255, 255, 0.07);
+    --border-strong: rgba(255, 255, 255, 0.15);
+    --accent-amber-text: #FBBF24;
+    background-color: #0B0A0A;
+    color: #FFFFFF;
+  }
+
+  html {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    scroll-behavior: smooth;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  body {
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+    overflow-x: hidden;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Inter Tight', 'Inter', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  }
+}
+
+/* ==========================================================================
+   BRIGHT DAYLIGHT THEME (DEFAULT: html[data-theme="light"])
+   Industrial Titanium, Warm Alabaster & Pure White Architectural Surfaces
+   ========================================================================== */
+
+html[data-theme='light'] .bg-\[\#0B0A0A\]:not(.studio-photo-stage) {
+  background-color: #F7F6F2 !important;
+}
+
+html[data-theme='light'] .bg-\[\#0B0A0A\]\/85 {
+  background-color: rgba(247, 246, 242, 0.88) !important;
+}
+
+html[data-theme='light'] .bg-\[\#080707\] {
+  background-color: #EAE6DF !important;
+}
+
+html[data-theme='light'] .bg-\[\#121110\]:not(.studio-photo-stage *) {
+  background-color: #EFECE6 !important;
+}
+
+html[data-theme='light'] .bg-\[\#121110\]\/95:not(.studio-photo-stage *) {
+  background-color: rgba(255, 255, 255, 0.97) !important;
+}
+
+html[data-theme='light'] .bg-\[\#121110\]\/70,
+html[data-theme='light'] .bg-\[\#121110\]\/60,
+html[data-theme='light'] .bg-\[\#121110\]\/50,
+html[data-theme='light'] .bg-\[\#121110\]\/40 {
+  background-color: #EFECE6 !important;
+}
+
+html[data-theme='light'] .bg-\[\#181716\]:not(.studio-photo-stage *),
+html[data-theme='light'] .bg-\[\#181716\]\/90:not(.studio-photo-stage *),
+html[data-theme='light'] .bg-\[\#181716\]\/80:not(.studio-photo-stage *) {
+  background-color: #FFFFFF !important;
+}
+
+html[data-theme='light'] .bg-\[\#181716\]\/50:not(.studio-photo-stage *) {
+  background-color: rgba(255, 255, 255, 0.65) !important;
+}
+
+html[data-theme='light'] .hover\:bg-\[\#181716\]:hover:not(.studio-photo-stage *),
+html[data-theme='light'] .hover\:bg-\[\#22201E\]:hover:not(.studio-photo-stage *) {
+  background-color: #F3F0EA !important;
+}
+
+html[data-theme='light'] .bg-metallic-banner {
+  background-image: linear-gradient(135deg, #FFFFFF 0%, #F7F5F0 55%, #EFECE4 100%) !important;
+}
+
+html[data-theme='light'] .bg-white\/\[0\.02\],
+html[data-theme='light'] .bg-white\/\[0\.03\],
+html[data-theme='light'] .bg-white\/\[0\.04\],
+html[data-theme='light'] .bg-white\/\[0\.05\],
+html[data-theme='light'] .bg-white\/\[0\.06\],
+html[data-theme='light'] .bg-white\/\[0\.07\] {
+  background-color: rgba(28, 25, 23, 0.05) !important;
+}
+
+html[data-theme='light'] .hover\:bg-white\/\[0\.02\]:hover,
+html[data-theme='light'] .hover\:bg-white\/\[0\.04\]:hover,
+html[data-theme='light'] .hover\:bg-white\/\[0\.06\]:hover,
+html[data-theme='light'] .hover\:bg-white\/\[0\.07\]:hover,
+html[data-theme='light'] .hover\:bg-white\/\[0\.08\]:hover,
+html[data-theme='light'] .hover\:bg-white\/10:hover {
+  background-color: rgba(28, 25, 23, 0.08) !important;
+}
+
+/* Typography in Daylight Mode (excluding dark studio photo frame overlays) */
+html[data-theme='light'] .text-white:not(.studio-photo-stage *):not(.studio-photo-stage) {
+  color: #141210 !important;
+}
+
+html[data-theme='light'] .hover\:text-white:hover:not(.studio-photo-stage *) {
+  color: #141210 !important;
+}
+
+html[data-theme='light'] .text-stone-200:not(.studio-photo-stage *),
+html[data-theme='light'] .text-stone-300:not(.studio-photo-stage *) {
+  color: #3F3A34 !important;
+}
+
+html[data-theme='light'] .text-stone-400:not(.studio-photo-stage *),
+html[data-theme='light'] .text-stone-500:not(.studio-photo-stage *) {
+  color: #6E675F !important;
+}
+
+html[data-theme='light'] .text-amber-400:not(.studio-photo-stage *),
+html[data-theme='light'] .text-amber-300:not(.studio-photo-stage *) {
+  color: #B45309 !important;
+}
+
+html[data-theme='light'] .group:hover .group-hover\:text-amber-400:not(.studio-photo-stage *),
+html[data-theme='light'] .hover\:text-amber-400:hover:not(.studio-photo-stage *),
+html[data-theme='light'] .hover\:text-amber-300:hover:not(.studio-photo-stage *) {
+  color: #92400E !important;
+}
+
+/* Borders & Dividers in Daylight Mode */
+html[data-theme='light'] .border-white\/\[0\.04\]:not(.studio-photo-stage *),
+html[data-theme='light'] .border-white\/\[0\.05\]:not(.studio-photo-stage *),
+html[data-theme='light'] .border-white\/\[0\.06\]:not(.studio-photo-stage *),
+html[data-theme='light'] .border-white\/\[0\.07\]:not(.studio-photo-stage *),
+html[data-theme='light'] .border-white\/\[0\.08\]:not(.studio-photo-stage *),
+html[data-theme='light'] .border-white\/10:not(.studio-photo-stage *),
+html[data-theme='light'] .border-white\/15:not(.studio-photo-stage *) {
+  border-color: rgba(28, 25, 23, 0.1) !important;
+}
+
+html[data-theme='light'] .border-stone-800 {
+  border-color: rgba(28, 25, 23, 0.15) !important;
+}
+
+html[data-theme='light'] .divide-white\/\[0\.06\] > :not([hidden]) ~ :not([hidden]) {
+  border-color: rgba(28, 25, 23, 0.08) !important;
+}
+
+/* Shadows in Daylight Mode */
+html[data-theme='light'] .shadow-card-luxury:not(.studio-photo-stage) {
+  box-shadow: 0 14px 34px -10px rgba(28, 25, 23, 0.07), 0 2px 8px -2px rgba(28, 25, 23, 0.04) !important;
+}
+
+html[data-theme='light'] .studio-photo-stage {
+  box-shadow: 0 18px 40px -12px rgba(20, 18, 16, 0.22) !important;
+  border-color: rgba(20, 18, 16, 0.16) !important;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+html[data-theme='light'] ::-webkit-scrollbar-track {
+  background: #EFECE6;
+}
+
+html[data-theme='light'] ::-webkit-scrollbar-thumb {
+  background: #C7C2B8;
+  border-radius: 4px;
+}
+
+html[data-theme='light'] ::-webkit-scrollbar-thumb:hover {
+  background: #A8A29E;
+}
+
+html[data-theme='dark'] ::-webkit-scrollbar-track {
+  background: #0B0A0A;
+}
+
+html[data-theme='dark'] ::-webkit-scrollbar-thumb {
+  background: #292524;
+  border-radius: 4px;
+}
+
+html[data-theme='dark'] ::-webkit-scrollbar-thumb:hover {
+  background: #44403C;
+}

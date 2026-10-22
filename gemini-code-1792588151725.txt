@@ -1,0 +1,25 @@
+You are an Elite B2B Industrial Creative Director and Senior Frontend Architect.
+Build the official English website for "LONGGUARD TECHNOLOGY" (Guangdong Langcheng Technology Co., Ltd. & GDUT Institute of CNC Equipment Innovation - Intelligent Protection Technology R&D Center) strictly adhering to the luxury bionic aesthetic of German Bionic (dark warm-graphite backdrop #0B0A0A, 3200K warm amber rim illumination, generous editorial whitespace, and bold Swiss typography).
+
+CRITICAL ARCHITECTURAL RULES:
+1. MULTI-PAGE ROUTING:
+   - Do NOT cram all products into a single long-scroll page.
+   - Build 1 Brand Home (`/`) plus 8 dedicated product landing pages:
+     `/products/power-ua`, `/products/flex-w`, `/products/gloves-01`, `/products/frost-pcm-a`,
+     `/products/frost-pcm-g`, `/products/frost-tec-w`, `/products/frost-tec-d`, `/products/frost-acc-w`.
+2. NO GEEK / CONSOLE TAB CLUTTER:
+   - Remove all "View A/B/C" tab bars, "MACRO-01" developer tags, and neon-cyan terminal text.
+   - Present each product page as a fluid, magazine-style story:
+     Stage 1: Hero Stage (Floating hardware render + bold headline + CTA)
+     Stage 2: Big Impact Metrics Bar (3–4 large numbers)
+     Stage 3: Biomechanical Narrative & Interactive Hotspots
+     Stage 4: Asymmetric Craftsmanship Bento (Material Science)
+     Stage 5: Real-World Field Deployment Photography
+     Stage 6: Technical Specification Accordion & Procurement Action
+3. 100% DATA INTEGRITY:
+   - Never truncate, omit, or summarize specifications. Every product page must render the full parameter set from Section 5.
+4. UNIFIED WARM LIGHTING & LOGO:
+   - Render the custom `<BrandLogo/>` SVG with the dual-color circular ring and GDUT affiliation badge.
+   - Map all image placeholders and Banana prompts to the German Bionic lighting aesthetic (warm amber tungsten edge light over deep graphite charcoal #0B0A0A).
+5. ENTERPRISE FOOTER & INQUIRY:
+   - Display the exact R&D address in Foshan, hotline (+86 15989175854), inquiry email (1094099100@qq.com), and the 1-Year Official Industrial Warranty badge.
